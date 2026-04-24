@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <title>Privacy Policy • Noor Islamic App</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icon.png">
     <!-- Google Fonts: Poppins & Amiri Quran -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,7 +62,12 @@
             justify-content: center;
             margin-bottom: 1.5rem;
             box-shadow: 0 8px 25px rgba(212, 175, 55, 0.35);
-            font-size: 36px;
+            overflow: hidden;
+        }
+        .logo-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         h1 {
             font-family: 'Poppins', sans-serif;
@@ -229,7 +236,9 @@
     <div class="container">
         <!-- Header -->
         <div class="header">
-            <div class="logo-icon">🕌</div>
+            <div class="logo-icon">
+                <img src="icon.png" alt="Noor Islamic App Logo">
+            </div>
             <h1>Privacy Policy</h1>
             <div class="subtitle">Noor Islamic App</div>
             <div class="last-updated">Last updated: April 24, 2026</div>
