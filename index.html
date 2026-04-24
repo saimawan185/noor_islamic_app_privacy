@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Privacy Policy • Noor Islamic App</title>
+    <!-- Google Fonts: Poppins & Amiri Quran (fallback to system fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0A0E1A;
+            color: #e0e0e0;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            transition: background 0.3s ease;
+        }
+
+        /* Subtle geometric pattern overlay */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4af37' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 3rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Header / Hero */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .logo-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #D4AF37, #B8962E);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.35);
+            font-size: 36px;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 2.3rem;
+            color: #fff;
+            margin-bottom: 0.25rem;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            color: #D4AF37;
+            font-weight: 500;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            margin-bottom: 0.25rem;
+        }
+
+        .last-updated {
+            color: rgba(255, 255, 255, 0.45);
+            font-size: 0.85rem;
+        }
+
+        /* Cards */
+        .card {
+            background: #111827;
+            border-radius: 24px;
+            padding: 1.8rem 2rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+            transition: border-color 0.2s, transform 0.2s;
+        }
+
+        .card:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            transform: translateY(-2px);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        h2 .material-symbols-outlined {
+            color: #D4AF37;
+            font-size: 28px;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #D4AF37;
+            margin: 1.4rem 0 0.6rem;
+        }
+
+        p,
+        li {
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 400;
+            margin-bottom: 0.8rem;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+        }
+
+        a {
+            color: #D4AF37;
+            text-decoration: none;
+            border-bottom: 1px dotted rgba(212, 175, 55, 0.5);
+            transition: border-color 0.2s;
+        }
+
+        a:hover {
+            border-bottom-color: #fff;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 0.8rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(212, 175, 55, 0.08);
+            padding: 0.5rem 1.2rem;
+            border-radius: 40px;
+            font-size: 0.95rem;
+            color: #fff;
+        }
+
+        .contact-item i {
+            color: #D4AF37;
+        }
+
+        .apology {
+            background: linear-gradient(135deg, #1A2D5A, #0F1E3D);
+            border-radius: 24px;
+            padding: 2rem;
+            text-align: center;
+            color: #fff;
+            border: 1px solid rgba(212, 175, 55, 0.25);
+            margin-top: 1.5rem;
+        }
+
+        .apology i {
+            font-size: 32px;
+            color: #D4AF37;
+            margin-bottom: 0.8rem;
+        }
+
+        .apology p {
+            font-style: italic;
+            font-weight: 300;
+            font-size: 1.05rem;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 2.5rem;
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 0.85rem;
+        }
+
+        .bismillah {
+            font-family: 'Amiri Quran', serif;
+            font-size: 1.8rem;
+            color: #D4AF37;
+            margin: 1.2rem 0 0.5rem;
+            direction: rtl;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(212, 175, 55, 0.3), transparent);
+            margin: 2rem 0 1.5rem;
+        }
+
+        /* Back to top button */
+        #backToTop {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #D4AF37;
+            color: #0A0E1A;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: none;
+            font-size: 22px;
+            cursor: pointer;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            transition: 0.3s;
+        }
+
+        #backToTop:hover {
+            background: #b8962e;
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 1.5rem 1rem 2rem;
+            }
+
+            h1 {
+                font-size: 1.9rem;
+            }
+
+            .card {
+                padding: 1.4rem;
+            }
+        }
+    </style>
+    <!-- Material Icons (optional, for visual appeal) -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo-icon">🕌</div>
+            <h1>Privacy Policy</h1>
+            <div class="subtitle">Noor Islamic App</div>
+            <div class="last-updated">Last updated: April 24, 2026</div>
+            <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+        </div>
+
+        <!-- Introduction Card -->
+        <div class="card">
+            <h2>
+                <span class="material-symbols-outlined">verified_user</span> Introduction
+            </h2>
+            <p>Welcome to <strong>Noor Islamic App</strong> (com.noorislamic.app). Your privacy is sacred to us. This
+                policy explains how we collect, use, and safeguard your personal information when you use our app and
+                services. By using Noor Islamic App, you agree to the practices described here. If you disagree, please
+                discontinue use.</p>
+            <p>We are committed to upholding the highest standards of Islamic ethics and transparency. Your data is
+                handled with integrity, never sold, and used solely to enrich your spiritual journey.</p>
+        </div>
+
+        <!-- Information Collection -->
+        <div class="card">
+            <h2>
+                <span class="material-symbols-outlined">manage_search</span> Information We Collect
+            </h2>
+            <h3>📌 Automatically Collected Data</h3>
+            <p>We do <strong>not</strong> require registration or store personally identifiable information. However,
+                for core functionality (prayer times, Qibla, Hadith of the Day), the app may access:</p>
+            <ul>
+                <li><strong>Location Data</strong> – Only when you grant permission, to calculate accurate prayer times
+                    and Qibla direction. This data remains on your device and is never uploaded.</li>
+                <li><strong>Device Information</strong> – Minimal technical logs (crash reports, performance) for
+                    improving the app experience.</li>
+                <li><strong>Local Storage</strong> – We store app preferences (language, calculation method, bookmarks,
+                    favorites) locally using secure device storage. No personal identifiers are saved externally.</li>
+            </ul>
+            <h3>📌 Information You Provide</h3>
+            <p>We do not collect personally identifiable information unless you voluntarily contact us (e.g., via email
+                for feedback). In that case, we only use your contact details to respond and then delete them.</p>
+        </div>
+
+        <!-- How We Use Information -->
+        <div class="card">
+            <h2>
+                <span class="material-symbols-outlined">data_usage</span> How We Use Information
+            </h2>
+            <ul>
+                <li>To provide accurate prayer times and Qibla direction based on your location.</li>
+                <li>To customize app experience (language, translation preferences).</li>
+                <li>To improve the app by analyzing anonymized crash reports.</li>
+                <li>To respond to your feedback or support requests.</li>
+            </ul>
+            <p>We <strong>never</strong> sell, trade, or rent your personal data to third parties. All data usage aligns
+                with the app's spiritual purpose only.</p>
+        </div>
+
+        <!-- Data Sharing & Third Parties -->
+        <div class="card">
+            <h2>
+                <span class="material-symbols-outlined">share</span> Data Sharing & Third‑Party Services
+            </h2>
+            <p>We share minimal data only when necessary for app functionality:</p>
+            <ul>
+                <li><strong>Location Services</strong> – Handled by your device OS; we do not store or transmit location
+                    externally.</li>
+                <li><strong>Notification Services</strong> – Firebase Cloud Messaging (FCM) may be used to deliver
+                    prayer time alerts. No personal data is linked to these notifications.</li>
+                <li><strong>Analytics</strong> – We may use anonymous, aggregated analytics (e.g., Google Analytics for
+                    Firebase) to understand app performance. No personal identifiers are included.</li>
+            </ul>
+            <p>All third parties are contractually obligated to protect your data according to applicable laws.</p>
+        </div>
+
+        <!-- Security -->
+        <div class="card">
+            <h2>
+                <span class="material-symbols-outlined">shield_lock</span> Data Security
+            </h2>
+            <p>We implement strong security measures including encryption for data in transit (HTTPS) and secure local
+                storage. However, no method is 100% secure. We strive to protect your information with the best
+                available technology, and we advise you to keep your device safe.</p>
+        </div>
+
+        <!-- User Rights -->
+        <div class="card">
+            <h2>
+                <span class="material-symbols-outlined">gavel</span> Your Rights
+            </h2>
+            <ul>
+                <li>You can disable location access at any time via device settings.</li>
+                <li>You may clear app data to remove all locally stored preferences and bookmarks.</li>
+                <li>You can opt out of notifications through the app settings or device settings.</li>
+                <li>If you believe we have inadvertently collected personal data, please contact us to request deletion.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Cookies (WebView) -->
+        <div class="card">
+            <h2>
+                <span class="material-symbols-outlined">cookie</span> Cookies & WebView
+            </h2>
+            <p>Our app may display web content (e.g., privacy policy) in a WebView. We do not use persistent cookies;
+                any temporary session data is cleared upon closing the app. Third‑party websites linked in the app are
+                not governed by this policy.</p>
+        </div>
+
+        <!-- Changes to This Policy -->
+        <div class="card">
+            <h2>
+                <span class="material-symbols-outlined">update</span> Changes to This Policy
+            </h2>
+            <p>We may update our Privacy Policy from time to time. Any changes will be posted within the app and this
+                page. We encourage you to review this policy periodically. Continued use after changes means you accept
+                the updated policy.</p>
+        </div>
+
+        <!-- Contact & Apology Section -->
+        <div class="card">
+            <h2>
+                <span class="material-symbols-outlined">contact_support</span> Contact Us
+            </h2>
+            <p>If you have questions, suggestions, or concerns about this Privacy Policy, please reach out:</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="material-symbols-outlined">email</i>
+                    <a href="mailto:awanmsaim182@gmail.com">awanmsaim182@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="material-symbols-outlined">call</i>
+                    <a href="https://wa.me/923164168178" target="_blank">+92 316 4168178</a>
+                </div>
+            </div>
+            <hr>
+            <div class="apology">
+                <i class="material-symbols-outlined">sentiment_satisfied</i>
+                <p>We strive for perfection, but if you notice any mistake in the app or this policy, please forgive us
+                    and inform us immediately. Your feedback is a blessing for us to improve. May Allah accept our
+                    efforts and grant us the correct path. Ameen.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 Noor Islamic App • com.noorislamic.app • All rights reserved.</p>
+            <p style="margin-top: 0.3rem;">Made with 🤍 for the Ummah.</p>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Back to top">↑</button>
+
+    <script>
+        // Back to Top button behavior
+        const backToTopBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                backToTopBtn.style.display = 'flex';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Smooth scroll for any internal links (if added)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+
+</html>
