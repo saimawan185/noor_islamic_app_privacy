@@ -185,6 +185,17 @@
             color: rgba(255,255,255,0.3);
             font-size: 0.85rem;
         }
+        .playstore-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(212,175,55,0.12);
+            border: 1px solid rgba(212,175,55,0.3);
+            border-radius: 40px;
+            padding: 8px 18px;
+            margin: 8px 0 12px;
+            font-size: 0.9rem;
+        }
         .bismillah {
             font-family: 'Amiri Quran', serif;
             font-size: 1.8rem;
@@ -232,162 +243,163 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <div class="header">
-            <div class="logo-icon">
-                <span class="material-symbols-outlined">mosque</span>
+<div class="container">
+    <!-- Header -->
+    <div class="header">
+        <div class="logo-icon">
+            <span class="material-symbols-outlined">mosque</span>
+        </div>
+        <h1>Privacy Policy</h1>
+        <div class="subtitle">Noor Islamic App</div>
+        <div class="last-updated">Last updated: April 24, 2026</div>
+        <div class="playstore-link">
+            <span class="material-symbols-outlined" style="font-size:18px">download</span>
+            <a href="https://play.google.com/store/apps/details?id=com.noorislamic.app" target="_blank">Available on Google Play</a>
+        </div>
+        <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+    </div>
+
+    <!-- Introduction Card -->
+    <div class="card">
+        <h2><span class="material-symbols-outlined">verified_user</span> Introduction</h2>
+        <p>Welcome to <strong>Noor Islamic App</strong> (com.noorislamic.app). Your privacy is sacred to us. This policy explains how we collect, use, and safeguard your personal information when you use our app and services. By using Noor Islamic App, you agree to the practices described here. If you disagree, please discontinue use.</p>
+        <p>We are committed to upholding the highest standards of Islamic ethics and transparency. Your data is handled with integrity, never sold, and used solely to enrich your spiritual journey.</p>
+    </div>
+
+    <!-- Information Collection -->
+    <div class="card">
+        <h2><span class="material-symbols-outlined">manage_search</span> Information We Collect</h2>
+        <h3>📌 Automatically Collected Data</h3>
+        <p>We do <strong>not</strong> require registration or store personally identifiable information. However, for core functionality (prayer times, Qibla, Hadith of the Day, Islamic Games, Quizzes, Prayer Tracker), the app may access:</p>
+        <ul>
+            <li><strong>Location Data</strong> – Only when you grant permission, to calculate accurate prayer times and Qibla direction. This data remains on your device and is never uploaded.</li>
+            <li><strong>Device Information</strong> – Minimal technical logs (crash reports, performance) for improving the app experience.</li>
+            <li><strong>Local Storage</strong> – We store app preferences (language, calculation method, bookmarks, favorites, Prayer Tracker entries, game progress) locally using secure device storage. No personal identifiers are saved externally.</li>
+        </ul>
+        <h3>📌 Islamic Games & Quizzes</h3>
+        <p>Our app includes interactive Islamic games such as <strong>Memory Match</strong>, <strong>Letter Puzzle</strong>, and <strong>Word Catch</strong>, as well as daily educational quizzes. These features do <strong>not</strong> collect any personal data. Your scores, progress, and completions are stored only on your device and are never transmitted to our servers. No leaderboards or social sharing are implemented that would require personal information.</p>
+        <h3>📌 Prayer Tracker</h3>
+        <p>The Prayer Tracker allows you to record your daily prayers (Fajr, Dhuhr, Asr, Maghrib, Isha). All tracking data (which prayers you have marked as completed on which dates) is stored <strong>exclusively on your device</strong> using local storage. We do not have access to your prayer history, and it is never uploaded to any cloud service or server. You can delete your prayer history at any time by clearing app data or manually resetting the tracker.</p>
+        <h3>📌 Information You Provide</h3>
+        <p>We do not collect personally identifiable information unless you voluntarily contact us (e.g., via email for feedback). In that case, we only use your contact details to respond and then delete them.</p>
+    </div>
+
+    <!-- How We Use Information -->
+    <div class="card">
+        <h2><span class="material-symbols-outlined">data_usage</span> How We Use Information</h2>
+        <ul>
+            <li>To provide accurate prayer times and Qibla direction based on your location.</li>
+            <li>To customize app experience (language, translation preferences).</li>
+            <li>To improve the app by analyzing anonymized crash reports.</li>
+            <li>To respond to your feedback or support requests.</li>
+            <li><strong>Games & Quizzes:</strong> To store your scores and progress locally for a seamless gaming experience.</li>
+            <li><strong>Prayer Tracker:</strong> To let you maintain a private record of your prayer consistency – this data never leaves your phone.</li>
+        </ul>
+        <p>We <strong>never</strong> sell, trade, or rent your personal data to third parties. All data usage aligns with the app's spiritual purpose only.</p>
+    </div>
+
+    <!-- Data Sharing & Third Parties -->
+    <div class="card">
+        <h2><span class="material-symbols-outlined">share</span> Data Sharing & Third‑Party Services</h2>
+        <p>We share minimal data only when necessary for app functionality:</p>
+        <ul>
+            <li><strong>Location Services</strong> – Handled by your device OS; we do not store or transmit location externally.</li>
+            <li><strong>Notification Services</strong> – Firebase Cloud Messaging (FCM) may be used to deliver prayer time alerts and reminders (including optional Prayer Tracker reminders). No personal data is linked to these notifications.</li>
+            <li><strong>Analytics</strong> – We may use anonymous, aggregated analytics (e.g., Google Analytics for Firebase) to understand app performance. No personal identifiers are included, and we do not track individual user behavior within games or tracker.</li>
+        </ul>
+        <p>All third parties are contractually obligated to protect your data according to applicable laws.</p>
+    </div>
+
+    <!-- Security -->
+    <div class="card">
+        <h2><span class="material-symbols-outlined">shield_lock</span> Data Security</h2>
+        <p>We implement strong security measures including encryption for data in transit (HTTPS) and secure local storage. However, no method is 100% secure. We strive to protect your information with the best available technology, and we advise you to keep your device safe.</p>
+    </div>
+
+    <!-- User Rights -->
+    <div class="card">
+        <h2><span class="material-symbols-outlined">gavel</span> Your Rights</h2>
+        <ul>
+            <li>You can disable location access at any time via device settings.</li>
+            <li>You may clear app data to remove all locally stored preferences, bookmarks, game progress, and Prayer Tracker history.</li>
+            <li>You can opt out of notifications through the app settings or device settings.</li>
+            <li>If you believe we have inadvertently collected personal data, please contact us to request deletion.</li>
+        </ul>
+    </div>
+
+    <!-- Cookies (WebView) -->
+    <div class="card">
+        <h2><span class="material-symbols-outlined">cookie</span> Cookies & WebView</h2>
+        <p>Our app may display web content (e.g., privacy policy) in a WebView. We do not use persistent cookies; any temporary session data is cleared upon closing the app. Third‑party websites linked in the app are not governed by this policy.</p>
+    </div>
+
+    <!-- Children's Privacy -->
+    <div class="card">
+        <h2><span class="material-symbols-outlined">family_history</span> Children's Privacy</h2>
+        <p>Noor Islamic App is suitable for all ages. We do not knowingly collect personal information from children under 13. The app does not require registration, and all interactive features (games, quizzes, tracker) store data only locally on the device. Parents are encouraged to supervise their children's use.</p>
+    </div>
+
+    <!-- Changes to This Policy -->
+    <div class="card">
+        <h2><span class="material-symbols-outlined">update</span> Changes to This Policy</h2>
+        <p>We may update our Privacy Policy from time to time. Any changes will be posted within the app and this page. We encourage you to review this policy periodically. Continued use after changes means you accept the updated policy.</p>
+    </div>
+
+    <!-- Contact & Apology Section -->
+    <div class="card">
+        <h2><span class="material-symbols-outlined">contact_support</span> Contact Us</h2>
+        <p>If you have questions, suggestions, or concerns about this Privacy Policy, please reach out:</p>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="material-symbols-outlined">email</i>
+                <a href="mailto:awanmsaim182@gmail.com">awanmsaim182@gmail.com</a>
             </div>
-            <h1>Privacy Policy</h1>
-            <div class="subtitle">Noor Islamic App</div>
-            <div class="last-updated">Last updated: April 24, 2026</div>
-            <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
-        </div>
-
-        <!-- Introduction Card -->
-        <div class="card">
-            <h2>
-                <span class="material-symbols-outlined">verified_user</span> Introduction
-            </h2>
-            <p>Welcome to <strong>Noor Islamic App</strong> (com.noorislamic.app). Your privacy is sacred to us. This policy explains how we collect, use, and safeguard your personal information when you use our app and services. By using Noor Islamic App, you agree to the practices described here. If you disagree, please discontinue use.</p>
-            <p>We are committed to upholding the highest standards of Islamic ethics and transparency. Your data is handled with integrity, never sold, and used solely to enrich your spiritual journey.</p>
-        </div>
-
-        <!-- Information Collection -->
-        <div class="card">
-            <h2>
-                <span class="material-symbols-outlined">manage_search</span> Information We Collect
-            </h2>
-            <h3>📌 Automatically Collected Data</h3>
-            <p>We do <strong>not</strong> require registration or store personally identifiable information. However, for core functionality (prayer times, Qibla, Hadith of the Day), the app may access:</p>
-            <ul>
-                <li><strong>Location Data</strong> – Only when you grant permission, to calculate accurate prayer times and Qibla direction. This data remains on your device and is never uploaded.</li>
-                <li><strong>Device Information</strong> – Minimal technical logs (crash reports, performance) for improving the app experience.</li>
-                <li><strong>Local Storage</strong> – We store app preferences (language, calculation method, bookmarks, favorites) locally using secure device storage. No personal identifiers are saved externally.</li>
-            </ul>
-            <h3>📌 Information You Provide</h3>
-            <p>We do not collect personally identifiable information unless you voluntarily contact us (e.g., via email for feedback). In that case, we only use your contact details to respond and then delete them.</p>
-        </div>
-
-        <!-- How We Use Information -->
-        <div class="card">
-            <h2>
-                <span class="material-symbols-outlined">data_usage</span> How We Use Information
-            </h2>
-            <ul>
-                <li>To provide accurate prayer times and Qibla direction based on your location.</li>
-                <li>To customize app experience (language, translation preferences).</li>
-                <li>To improve the app by analyzing anonymized crash reports.</li>
-                <li>To respond to your feedback or support requests.</li>
-            </ul>
-            <p>We <strong>never</strong> sell, trade, or rent your personal data to third parties. All data usage aligns with the app's spiritual purpose only.</p>
-        </div>
-
-        <!-- Data Sharing & Third Parties -->
-        <div class="card">
-            <h2>
-                <span class="material-symbols-outlined">share</span> Data Sharing & Third‑Party Services
-            </h2>
-            <p>We share minimal data only when necessary for app functionality:</p>
-            <ul>
-                <li><strong>Location Services</strong> – Handled by your device OS; we do not store or transmit location externally.</li>
-                <li><strong>Notification Services</strong> – Firebase Cloud Messaging (FCM) may be used to deliver prayer time alerts. No personal data is linked to these notifications.</li>
-                <li><strong>Analytics</strong> – We may use anonymous, aggregated analytics (e.g., Google Analytics for Firebase) to understand app performance. No personal identifiers are included.</li>
-            </ul>
-            <p>All third parties are contractually obligated to protect your data according to applicable laws.</p>
-        </div>
-
-        <!-- Security -->
-        <div class="card">
-            <h2>
-                <span class="material-symbols-outlined">shield_lock</span> Data Security
-            </h2>
-            <p>We implement strong security measures including encryption for data in transit (HTTPS) and secure local storage. However, no method is 100% secure. We strive to protect your information with the best available technology, and we advise you to keep your device safe.</p>
-        </div>
-
-        <!-- User Rights -->
-        <div class="card">
-            <h2>
-                <span class="material-symbols-outlined">gavel</span> Your Rights
-            </h2>
-            <ul>
-                <li>You can disable location access at any time via device settings.</li>
-                <li>You may clear app data to remove all locally stored preferences and bookmarks.</li>
-                <li>You can opt out of notifications through the app settings or device settings.</li>
-                <li>If you believe we have inadvertently collected personal data, please contact us to request deletion.</li>
-            </ul>
-        </div>
-
-        <!-- Cookies (WebView) -->
-        <div class="card">
-            <h2>
-                <span class="material-symbols-outlined">cookie</span> Cookies & WebView
-            </h2>
-            <p>Our app may display web content (e.g., privacy policy) in a WebView. We do not use persistent cookies; any temporary session data is cleared upon closing the app. Third‑party websites linked in the app are not governed by this policy.</p>
-        </div>
-
-        <!-- Changes to This Policy -->
-        <div class="card">
-            <h2>
-                <span class="material-symbols-outlined">update</span> Changes to This Policy
-            </h2>
-            <p>We may update our Privacy Policy from time to time. Any changes will be posted within the app and this page. We encourage you to review this policy periodically. Continued use after changes means you accept the updated policy.</p>
-        </div>
-
-        <!-- Contact & Apology Section -->
-        <div class="card">
-            <h2>
-                <span class="material-symbols-outlined">contact_support</span> Contact Us
-            </h2>
-            <p>If you have questions, suggestions, or concerns about this Privacy Policy, please reach out:</p>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="material-symbols-outlined">email</i>
-                    <a href="mailto:awanmsaim182@gmail.com">awanmsaim182@gmail.com</a>
-                </div>
-                <div class="contact-item">
-                    <i class="material-symbols-outlined">call</i>
-                    <a href="https://wa.me/923164168178" target="_blank">+92 316 4168178</a>
-                </div>
-            </div>
-            <hr>
-            <div class="apology">
-                <i class="material-symbols-outlined">sentiment_satisfied</i>
-                <p>We strive for perfection, but if you notice any mistake in the app — especially in Arabic text, translations, or Islamic content — please forgive us and bring it to our attention immediately. We deeply respect the sacredness of the Quran and Hadith, and any error is purely unintentional. Your feedback is a blessing for us to improve. May Allah accept our efforts and grant us the correct path. Ameen.</p>
+            <div class="contact-item">
+                <i class="material-symbols-outlined">call</i>
+                <a href="https://wa.me/923164168178" target="_blank">+92 316 4168178</a>
             </div>
         </div>
-
-        <div class="footer">
-            <p>© 2026 Noor Islamic App • com.noorislamic.app • All rights reserved.</p>
-            <p style="margin-top: 0.3rem;">Made with 🤍 for the Ummah.</p>
+        <hr>
+        <div class="apology">
+            <i class="material-symbols-outlined">sentiment_satisfied</i>
+            <p>We strive for perfection, but if you notice any mistake in the app — especially in Arabic text, translations, Islamic content, or any of the games/quizzes — please forgive us and bring it to our attention immediately. We deeply respect the sacredness of the Quran and Hadith, and any error is purely unintentional. Your feedback is a blessing for us to improve. May Allah accept our efforts and grant us the correct path. Ameen.</p>
         </div>
     </div>
 
-    <!-- Back to Top Button -->
-    <button id="backToTop" title="Back to top">↑</button>
+    <div class="footer">
+        <p>© 2026 Noor Islamic App • com.noorislamic.app • All rights reserved.</p>
+        <p style="margin-top: 0.3rem;">Made with 🤍 for the Ummah.</p>
+        <p style="margin-top: 0.5rem;">
+            <a href="https://play.google.com/store/apps/details?id=com.noorislamic.app" target="_blank" style="border-bottom: none;">📲 Download on Google Play</a>
+        </p>
+    </div>
+</div>
 
-    <script>
-        // Back to Top button behavior
-        const backToTopBtn = document.getElementById('backToTop');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 400) {
-                backToTopBtn.style.display = 'flex';
-            } else {
-                backToTopBtn.style.display = 'none';
-            }
-        });
-        backToTopBtn.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
+<!-- Back to Top Button -->
+<button id="backToTop" title="Back to top">↑</button>
 
-        // Smooth scroll for any internal links (if added)
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) target.scrollIntoView({ behavior: 'smooth' });
-            });
+<script>
+    // Back to Top button behavior
+    const backToTopBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 400) {
+            backToTopBtn.style.display = 'flex';
+        } else {
+            backToTopBtn.style.display = 'none';
+        }
+    });
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Smooth scroll for any internal links (if added)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
         });
-    </script>
+    });
+</script>
 </body>
 </html>
